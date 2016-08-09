@@ -113,6 +113,14 @@ class PokerHand
   end
 end
 
+hand = PokerHand.new(Deck.new)
+puts hand
+puts "------------"
+puts hand.class
+puts "------------"
+# puts hand.ancestors
+puts "------------"
+puts PokerHand.ancestors
 # hand = PokerHand.new(Deck.new)
 # hand.print
 # puts hand.evaluate

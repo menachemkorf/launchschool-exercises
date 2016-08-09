@@ -16,7 +16,7 @@ class Luhn
   end
 
   def checksum
-    addends.inject { |sum, digit| sum + digit}
+    addends.inject(&:+)
   end
 
   def valid?
