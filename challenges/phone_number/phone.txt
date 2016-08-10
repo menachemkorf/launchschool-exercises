@@ -1,0 +1,28 @@
+input = "str" replace all non-alpha-numeric with empty string
+
+check if valid
+
+return formatted number or '000000000'
+
+
+algorithim
+
+  if input.length between 10..11 ||
+     input.match('a'..'z') ||
+     input.length == 11 && input[0] != 0
+
+    return invalid_number
+
+  else
+    return input[-10..-1]
+  end
+
+  thought to maybe split format_number into two methods: valid? and format_number,
+  but that would require unnessesary computation
+
+
+
+
+
+
+
