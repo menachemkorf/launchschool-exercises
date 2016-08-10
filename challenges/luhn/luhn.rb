@@ -1,4 +1,3 @@
-require 'pry'
 class Luhn
   def initialize(digits)
     @digits = digits.to_s.chars.map(&:to_i)
@@ -20,7 +19,7 @@ class Luhn
   end
 
   def valid?
-    checksum % 10 == 0
+    (checksum % 10).zero?
   end
 
   def self.create(number)
@@ -32,8 +31,3 @@ class Luhn
     end
   end
 end
-
-# Luhn.new(738).create       #invalid
-p Luhn.new(123).checksum
-
-# p Luhn.new(8_739_567).checksum #valid
