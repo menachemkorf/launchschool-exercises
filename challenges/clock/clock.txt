@@ -1,0 +1,13 @@
+1. have the total amount of minutes and add an algorithim to determine how many hours and minutes are in the amount of minutes
+
+  to do this you need variables @min and @hour that all methods have access to.
+
+  setting, adding and subtracting minutes will modify the total minutes variable
+
+  the `at` method will times the first arg by 60 then add the second arg to that value
+
+  the `+` method will add the amount to the total value
+
+  the `to_s` method will (use another method to) divide the amount by `60` with the remainder being the minutes
+
+  100.divmod(60) => [1, 40]
