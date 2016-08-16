@@ -1,0 +1,22 @@
+line = ('A'..input.to_a.legnth * 2) - 1
+
+make array of size to fit 'A' to input and back, so (n * 2) - 1
+
+index = array.center
+
+the first line put 'A' at `index`
+  index += 1
+  put 'B' in index of line 2
+    index += 1
+    put 'C' in index of line 3
+    ...
+    reverse! each line
+    repeat
+
+
+- we need a collection of lines
+  diamond = [[]]
+  line = the inner arrays
+
+
+in the end join each line with "/n" and add "/n" to end of last line
