@@ -36,13 +36,7 @@
 
 function triangle(side1, side2, side3) {
   var sides = [side1, side2, side3].sort(function(a, b) {
-    if (a > b) {
-      return 1;
-    } else if (a < b) {
-      return -1;
-    } else {
-      return 0;
-    }
+    return a - b;
   });
 
   if (sides[0] <= 0 || sides[2] >= sides[0] + sides[1]) {
